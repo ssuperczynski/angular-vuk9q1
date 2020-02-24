@@ -1,0 +1,8 @@
+Heavy template:
+
+<ng-container *ngFor="let item of items; let index = index">
+	<ng-container *ngIf="true">
+		<ng-container *ngIf="template" [ngTemplateOutlet]="template" [ngTemplateOutletContext]="{ $implicit: index }">
+		</ng-container>
+	</ng-container>
+</ng-container>

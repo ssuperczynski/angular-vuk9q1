@@ -1,0 +1,12 @@
+Version: {{version.full}}
+<p>
+  Start editing to see some magic happen :)
+</p>
+
+<hello [template]="heavyTemplate"></hello>
+
+
+<ng-template #heavyTemplate let-index>
+  <div class="phone">Phone: {{index}}</div>
+  {{heavyComputation()}}
+</ng-template>
